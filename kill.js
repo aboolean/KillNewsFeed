@@ -23,4 +23,4 @@ function blockAndDisplay() {
     $('#pagelet_canvas_nav_content').remove();
 }
 
-window.setInterval(blockAndDisplay, 100);
+$(document).ready(blockAndDisplay);
