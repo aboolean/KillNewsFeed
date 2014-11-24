@@ -1,4 +1,5 @@
 function blockAndDisplay() {
+	// remove news feed
     var feed = $('[id^=topnews_main_stream], [id^=mostrecent_main_stream], [id^=pagelet_home_stream]');
     var message = $('#distracted');
 
@@ -21,6 +22,15 @@ function blockAndDisplay() {
     $('#pagelet_games_rhc').remove();
     $('#pagelet_trending_tags_and_topics').remove();
     $('#pagelet_canvas_nav_content').remove();
+    
+    // remove chat sidebar
+    $('.fbChatSidebar').remove();
+    
+    // clear right col card
+    $('#pagelet_rhc_footer').siblings().remove();
+    
+    // remove select components of left sidebar
+    $('#pinnedNav').siblings('.homeSideNav').remove();
 }
 
 $(document).ready(blockAndDisplay);
