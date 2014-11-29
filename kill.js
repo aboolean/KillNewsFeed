@@ -18,10 +18,10 @@ function blockAndDisplay() {
     $('#pagelet_canvas_nav_content').remove();
 
     // remove chat sidebar
-    $('.fbChatSidebar').remove();
+    $('#pagelet_sidebar, .fbChatSidebar').hide();
 
     // clear right col card
-    $('#pagelet_rhc_footer').siblings().remove();
+    $('#pagelet_rhc_footer').siblings().hide();
 
     // remove select components of left sidebar
     $('#pinnedNav').siblings('.homeSideNav').hide();
